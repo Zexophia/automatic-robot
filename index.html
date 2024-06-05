@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp Email Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Temp email</h1>
+        <div id="timer">05:00</div>
+        <div id="email-box">
+            <span id="email-display"></span>
+        </div>
+        <div class="button-group">
+            <button onclick="generateTempEmail()">Generate</button>
+            <button onclick="refreshInbox()">Refresh</button>
+            <button onclick="copyEmail()">Copy</button>
+        </div>
+        <div id="inbox-box">
+            <h2>Inbox</h2>
+            <ul id="email-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
